@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Game3: Customizable Rounds and Draws with Major Selection</title>
+<style>
+    body { font-size: 16px; display: flex; flex-direction: column; align-items: center; }
+    select, button, input, div { font-size: 1rem; margin: 10px; padding: 5px 10px; }
+    #numbersList, #results { border: 2px solid black; padding: 10px; height: 150px; overflow-y: auto; width: 90%; max-width: 400px; }
+    button { width: auto; max-width: 200px; }
+</style>
+</head>
+<body>
+    <h2>Customizable Major Selection and Raffle</h2>
+    <label for="totalRounds">Total Rounds:</label>
+    <input type="number" id="totalRounds" min="1" value="3">
+    <label for="drawsPerRound">Draws per Round:</label>
+    <input type="number" id="drawsPerRound" min="1" value="10">
+    <select id="majorSelect">
+        <option value="12000">Natural Sciences and Engineering</option>
+        <option value="5500">Humanities</option>
+        <option value="6500">Social Sciences</option>
+        <option value="11000">Business and Management</option>
+        <option value="14000">Medicine and Health Sciences</option>
+        <option value="8000">Arts and Design</option>
+        <option value="10000">Law and Public Policy</option>
+        <option value="9500">Education</option>
+        <option value="5000">Agriculture and Forestry</option>
+        <option value="6500">Hospitality and Tourism Management</option>
+    </select>
+    <button id="selectMajorButton">Select Major</button>
+    <button id="drawButton">Lottery!</button>
+    <button id="resetButton">Reset</button>
+    <button id="endButton">End</button>
+    <div id="numbersList"></div>
+    <div id="results"></div>
+<script src="game3.js" defer></script>
+</body>
+</html>

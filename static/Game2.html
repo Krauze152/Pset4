@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Game2: Dual Major Selection and Raffle</title>
+<style>
+    body { font-size: 16px; display: flex; justify-content: center; flex-wrap: wrap; }
+    .game-container { display: flex; width: 100%; justify-content: space-around; }
+    .user-game { flex-basis: 48%; padding: 20px; border: 1px solid black; margin: 10px; }
+    select, button, div { font-size: 1rem; margin: 10px 0; padding: 5px 10px; }
+    .numbersList, .previousRounds { border: 2px solid black; padding: 10px; height: 150px; overflow-y: auto; }
+    h2 { text-align: center; }
+    button { width: 100%; }
+</style>
+</head>
+<body>
+    <div class="game-container">
+        <div class="user-game" id="userA">
+            <h2>User A</h2>
+            <select id="majorSelectA">
+                <option value="12000">Natural Sciences and Engineering</option>
+                <option value="5500">Humanities</option>
+                <option value="6500">Social Sciences</option>
+                <option value="11000">Business and Management</option>
+                <option value="14000">Medicine and Health Sciences</option>
+                <option value="8000">Arts and Design</option>
+                <option value="10000">Law and Public Policy</option>
+                <option value="9500">Education</option>
+                <option value="5000">Agriculture and Forestry</option>
+                <option value="6500">Hospitality and Tourism Management</option>
+            </select>
+            <button id="selectMajorButtonA">Select</button>
+            <button id="raffleButtonA" disabled>Lottery!</button>
+            <div id="numbersListA" class="numbersList"></div>
+            <div id="previousRoundsA" class="previousRounds"></div>
+            <button id="nextRoundButtonA" style="display:none;">Next Round</button>
+            <button id="endButtonA" style="display:none;">END</button>
+            <button id="resetButtonA">Reset</button>
+        </div>
+        <div class="user-game" id="userB">
+            <h2>User B</h2>
+            <select id="majorSelectB">
+                <option value="12000">Natural Sciences and Engineering</option>
+                <option value="5500">Humanities</option>
+                <option value="6500">Social Sciences</option>
+                <option value="11000">Business and Management</option>
+                <option value="14000">Medicine and Health Sciences</option>
+                <option value="8000">Arts and Design</option>
+                <option value="10000">Law and Public Policy</option>
+                <option value="9500">Education</option>
+                <option value="5000">Agriculture and Forestry</option>
+                <option value="6500">Hospitality and Tourism Management</option>
+            </select>
+            <button id="selectMajorButtonB">Select</button>
+            <button id="raffleButtonB" disabled>Lottery!</button>
+            <div id="numbersListB" class="numbersList"></div>
+            <div id="previousRoundsB" class="previousRounds"></div>
+            <button id="nextRoundButtonB" style="display:none;">Next Round</button>
+            <button id="endButtonB" style="display:none;">END</button>
+            <button id="resetButtonB">Reset</button>
+        </div>
+    </div>
+<script src="game2.js" defer></script>
+</body>
+</html>

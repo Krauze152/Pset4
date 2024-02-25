@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Major and Career Simulation Game</title>
+    <style>
+        body { font-size: 32px; display: flex; flex-direction: column; align-items: center; margin-top: 40px; }
+        .intro { text-align: center; margin-bottom: 40px; max-width: 80%; }
+        .game-buttons { display: flex; justify-content: center; gap: 40px; }
+        button { padding: 20px 40px; cursor: pointer; font-size: 1.5rem; }
+        select { font-size: 1.5rem; padding: 10px; }
+    </style>
+</head>
+<body>
+    <div class="intro">
+        <p>Welcome to the "Major and Career Simulation" sweepstakes game!</p>
+        <p>In this game, you will play as a senior in high school and choose your major. You will embark on an amazing journey to find your ideal career. Through the lottery, you will not only have the opportunity to learn about the potential employment opportunities and salaries in different fields of specialization, but also experience the uncertainty and challenges of making a career choice.</p>
+        <p>Introduction to the rules of the game:</p>
+        <ul>
+            <li>Choose the profession you are interested in: at the beginning of the game, you will choose one of several major categories of professions that you are most interested in. Don't worry, if you don't have a clear plan for the future, this game will help you explore the unknown.</li>
+            <li>Sweepstakes: After choosing your major, you will enter a sweepstakes. You will have 10 draws per round, and each draw will show the potential salary for a position in your chosen area of specialization.</li>
+            <li>Exploration: There are three rounds of the game in Game1, and at the end of each round you have the option to either continue exploring a new specialty or continue to learn more about your current chosen specialty. Your task is to find the optimal balance between exploration (learning more about career opportunities) and utilization (delving deeper into your current choice.) Game2 is a two-player game, and Game3 is a free mode.</li>
+            <li>Calculate Average Salary: At the end of each round, we will calculate the average of the salaries of the positions from which you were drawn as a reference for evaluating your career choices.</li>
+            <li>Final Reflection: At the end of the game, you will have the opportunity to reflect on your choices and results and understand the application of the Explore & Utilize trade-off algorithm to real-life career planning.</li>
+        </ul>
+    </div>
+    <div class="game-buttons">
+        <button id="game1">Game1</button>
+        <button id="game2">Game2</button>
+        <button id="game3">Game3</button>
+    </div>
+    <script>
+        document.getElementById('game1').addEventListener('click', function() { window.location.href = 'static/Game1.html'; });
+        document.getElementById('game2').addEventListener('click', function() { window.location.href = 'static/Game2.html'; });
+        document.getElementById('game3').addEventListener('click', function() { window.location.href = 'static/Game3.html'; });
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Major Selection and Raffle</title>
+<style>
+    body { display: flex; justify-content: center; font-size: 16px; }
+    .container { display: flex; flex-direction: column; align-items: center; }
+    .main-content { margin: 10px; }
+    .selection-row { display: flex; align-items: center; }
+    select, button, div { font-size: 2rem; margin: 10px 0; }
+    button, select { padding: 10px 20px; }
+    #numbersList, #previousRounds { border: 2px solid black; padding: 10px; width: auto; min-width: 320px; }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <h2>Select Your Major</h2>
+            <div class="selection-row">
+                <select id="majorSelect">
+                    <option value="12000">Natural Sciences and Engineering</option>
+                    <option value="5500">Humanities</option>
+                    <option value="6500">Social Sciences</option>
+                    <option value="11000">Business and Management</option>
+                    <option value="14000">Medicine and Health Sciences</option>
+                    <option value="8000">Arts and Design</option>
+                    <option value="10000">Law and Public Policy</option>
+                    <option value="9500">Education</option>
+                    <option value="5000">Agriculture and Forestry</option>
+                    <option value="6500">Hospitality and Tourism Management</option>
+                </select>
+                <button id="selectMajorButton">Select</button>
+            </div>
+            <button id="raffleButton" disabled>Lottery!</button>
+            <button id="nextRoundButton" style="display:none;">Next Round</button>
+            <button id="endButton" style="display:none;">END</button>
+            <button id="resetButton">Reset</button>
+            <div id="numbersList"></div>
+            <div id="previousRounds"></div>
+        </div>
+    </div>
+<script src="game1.js" defer></script>
+</body>
+</html>
